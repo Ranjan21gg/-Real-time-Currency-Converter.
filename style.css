@@ -1,0 +1,125 @@
+/* body,class,button,select,i,(container,form,input,dropdown,from,to,selector,select*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:rgb(21, 21, 75);
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    min-height: 50vh;
+    width: 50vh;
+}
+
+form {
+    margin: 2rem 0 2rem 0;
+    font: 1em sans-serif;
+}
+
+form,
+input,
+button,
+select {
+    margin-top: 1rem;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+
+form input,
+select {
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    height: 2rem;
+    padding-left: 1em;
+    margin-top: 0.5em;
+}
+
+.to{
+    margin-left: 4rem;
+}
+
+
+input:hover{
+    font-size: medium;
+    background-color: lightcyan;
+}
+
+select:scope{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size:medium;
+}
+
+.dropdown {
+    margin-top: 1em;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+i {
+    padding-left: 4rem;
+    font-size: x-large;
+}
+
+.msg, .date{
+    margin-top: 1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: 620;
+}
+
+
+/* button{
+    height: 5vh;
+    width: 100%;
+    border-radius: 1em;
+    background-color: aqua;
+    font-size: medium;
+    font-weight: 400;
+}
+
+button:hover{
+    cursor: pointer;
+    
+} */
+
+button {
+    /* background-color: #00d0a0; */
+    background-color: rgb(13, 225, 225);
+    /* your normal color */
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: large;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    /* smooth transition */
+}
+
+button:hover {
+    background-color: #00b28d;
+    /* slightly darker shade */
+    transform: scale(1.02);
+    /* slight zoom effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* shadow */
+}

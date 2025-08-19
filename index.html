@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURRENCY CONVERTER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Real Time :</h1>
+        <h1>Currency Converter</h1>
+        <form>
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input type="text" value="1">
+            </div>
+            <div class="dropdown">
+                <div class="from">
+                    <p>FROM</p>
+                    <div class="selector">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="img">
+                        <input list="currencyListFrom" id="fromInput" name="fromInput" placeholder="Search currency...">
+                        <datalist id="currencyListFrom" name="fromInput" id="from">
+                            <!-- Add all your currencies here -->
+                        </datalist>
+                    </div>
+                </div>
+                <i class="fa-solid fa-right-left"></i>
+                <div class="to">
+                    <p>TO</p>
+                    <div class="selector">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="img">
+                        <input list="currencyListto" id="toInput" name="toInput" placeholder="Search currency...">
+                        <datalist id="currencyListto" name="toInput" id="to">
+                            <!-- Add all your currencies here -->
+                        </datalist>
+                    </div>
+                </div>
+            </div>
+            <div class="msg">Exchange Value : </div>
+            <div class="date">Date : </div>
+            <!-- <button>Get Exchange Rate</button> -->
+        </form>
+    </div>
+
+    <script src="flags.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
